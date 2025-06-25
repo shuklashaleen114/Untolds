@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage Gujarat</title>
+  <link rel="icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefdf6;
+      color: #333;
+    }
+    header {
+      background-color: #8c3b2e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/d/db/Rani_ki_vav.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero input {
+      padding: 0.5rem;
+      width: 60%;
+      max-width: 400px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+    }
+    #places {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .place-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .place-card:hover {
+      transform: translateY(-5px);
+    }
+    .place-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .place-card h3 {
+      margin: 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .place-card p {
+      margin: 0.5rem;
+    }
+    .place-card a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #8c3b2e;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Heritage Gujarat</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore the Timeless Beauty of Gujarat's History</h2>
+    <input type="text" placeholder="Search Historic Place..." id="searchBar">
+  </section>
+
+  <section id="places">
+    <div class="place-card">
+      <img src="Images/Rani ki vav.jfif" alt="Rani Ki Vav">
+      <h3>Rani Ki Vav</h3>
+      <p>Stepwell from the 11th century in Patan.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/Modhera sun temple.jfif" alt="Modhera Sun Temple">
+      <h3>Modhera Sun Temple</h3>
+      <p>Dedicated to the Sun God, built in the 11th century.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/Lothal.jfif" alt="Lothal">
+      <h3>Lothal</h3>
+      <p>Ancient city of the Indus Valley Civilization.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/dholavira.jfif" alt="Dholavira">
+      <h3>Dholavira</h3>
+      <p>One of the prominent Harappan archaeological sites.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/chapaner.jfif" alt="Champaner-Pavagadh">
+      <h3>Champaner-Pavagadh</h3>
+      <p>Historic fortified city and UNESCO World Heritage Site.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/sarkhej roza.jfif" alt="Sarkhej Roza">
+      <h3>Sarkhej Roza</h3>
+      <p>Architectural complex near Ahmedabad.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/vijay vilas palace.jfif" alt="Vijay Vilas Palace">
+      <h3>Vijay Vilas Palace</h3>
+      <p>Royal palace in Mandvi, built in the 1920s.</p>
+      <a href="#">Know More</a>
+    </div>
+
+    <div class="place-card">
+      <img src="Images/adalalj vav.jfif" alt="Adalaj Vav">
+      <h3>Adalaj Vav</h3>
+      <p>Beautiful 15th-century stepwell near Gandhinagar.</p>
+      <a href="#">Know More</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Heritage Gujarat. All rights reserved.</p>
+  </footer>
+</body>
+</html>
